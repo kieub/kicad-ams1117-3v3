@@ -1,0 +1,9 @@
+* PSpice Model Editor - Version 17.2.0
+*$
+* AMS1117-3.3 Voltage Regulator Model
+.subckt AMS1117-3.3 1 2 3
+* 1: GND, 2: VO, 3: VI
+B1 2_int 1 V = min(V(3,1) - 1.1, 3.3)
+R1 2_int 2 0.05
+.ends
+*$
